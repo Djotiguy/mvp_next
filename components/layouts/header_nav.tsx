@@ -87,7 +87,7 @@ export function HeaderNavigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/write" legacyBehavior passHref>
+          <Link href="/public-feed" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Write a post
             </NavigationMenuLink>

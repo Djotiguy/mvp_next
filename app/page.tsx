@@ -6,7 +6,7 @@ import PostSection from "@/components/layouts/post-section";
 import { POSTS } from "@/utils/posts";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-center justify-between p-24">
       <div className="absolute bottom-4 left-4">
         <span className="sm:hidden">XS</span>
         <span className="hidden sm:block md:hidden">SM</span>
