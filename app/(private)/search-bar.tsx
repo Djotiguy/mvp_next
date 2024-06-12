@@ -46,7 +46,7 @@ export default function SearchBar() {
         onChange={handleChange}
         onClick={hanleClick}
         type="text"
-        className="p-2 rounded-lg bg-white text-black my-2 max-w-xs"
+        className="p-2 rounded-lg bg-slate-500 text-black my-2 max-w-xs"
         placeholder="Search"
         ref={ref}
       />

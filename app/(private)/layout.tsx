@@ -1,6 +1,5 @@
 "use client";
 import fetcher from "../api/util/fetcher"
-import Footer from "./footer"
 import Header from "./header"
 import NavBar from "./navbar"
 
@@ -19,8 +18,7 @@ export default function PrivateLayout({
                 <SearchBar />
                 <Header />
                 <NavBar />
-                <main className="w-full p-5 dark:bg-slate-800 bg-slate-300 rounded-lg my-2 ">{children}</main>
-                <Footer />
+                <main className="w-full p-20 dark:bg-slate-800 bg-slate-300 rounded-lg my-2 ">{children}</main>
             </div>
         </SWRConfig>
     )   
