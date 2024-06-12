@@ -1,7 +1,6 @@
 import { ChangeEvent, useState, useRef, useEffect} from "react";
 import * as _ from "lodash";
-import User from "../components/user";
-
+import User from "@/components/user";
 export default function SearchBar() {
   const [searchResults, setSearchResults] = useState([]);
   const [visible, setVisible] = useState(true);

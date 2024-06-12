@@ -1,5 +1,6 @@
 "use client";
 import {useState, FormEvent} from "react";
+import Link from "next/link";
 
 function Form(){
     const [username, setUsername] = useState<undefined | string>("");
@@ -89,6 +90,7 @@ function Form(){
                 </div>
             )
         })}
+        <p>Already have an account <Link href="/login" className="text-blue-500"> click here </Link> </p>
       </form>
     );
 }

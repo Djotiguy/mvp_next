@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, FormEvent } from "react";
 
@@ -29,7 +30,7 @@ export default function Form() {
       className="flex flex-col justify-center items-center gap-2 p-5 max-w-xs w-full dark:bg-slate-800 bg-slate-300 rounded-lg"
     >
       <div className="text-center">
-        <h3 className="font-semibold">Sign in</h3>
+        <h3 className="font-semibold">Login</h3>
       </div>
       <div className="my-3">
         <hr />
@@ -61,6 +62,7 @@ export default function Form() {
         />
       </div>
       <button type="submit" className="mt-4 dark:bg-slate-900 bg-slate-400 text-white p-3 rounded-lg">Sign In</button>
+        <p>Don't have any account <Link href="/signup" className="text-blue-500"> click here </Link> </p>
     </form>
   );
 }
