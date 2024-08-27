@@ -1,13 +1,13 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Category } from "@/types";
-import { CATEGORIES } from "@/utils/categories";
+import { Funcs } from "@/types";
+import { FUNCS } from "@/utils/funcs";
 import Link from "next/link";
       
 export default function FeaturesSection() {
   return (
     <div className="flex flex-col md:flex-row justify-center mt-6 gap-2 items-center">
-        {CATEGORIES.map((category: Category) => (
+        {FUNCS.map((category: Funcs) => (
             <Button
                 variant="outline"
                 key={category.id}

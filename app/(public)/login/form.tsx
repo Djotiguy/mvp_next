@@ -62,7 +62,7 @@ export default function Form() {
         />
       </div>
       <button type="submit" className="mt-4 dark:bg-slate-900 bg-slate-400 text-white p-3 rounded-lg">Sign In</button>
-        <p>Don't have any account <Link href="/signup" className="text-blue-500"> click here </Link> </p>
+        <p>Don't have any account <Link href="/account" className="text-blue-500"> click here </Link> </p>
     </form>
   );
 }

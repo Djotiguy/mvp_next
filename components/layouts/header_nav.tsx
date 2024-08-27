@@ -1,9 +1,8 @@
 "use client"
 
-import * as React from "react"
 import Link from "next/link"
+import * as React from "react"
 
-import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,8 +12,9 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { CATEGORIES } from "@/utils/categories"
-import { Category } from "@/types"
+import { cn } from "@/lib/utils"
+import { Funcs } from "@/types"
+import { FUNCS } from "@/utils/funcs"
 import { SERVICES } from "@/utils/services"
 
 
@@ -58,12 +58,12 @@ export function HeaderNavigation() {
           <NavigationMenuTrigger>Fonctionnalités</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {CATEGORIES.map((category: Category) => (
+              {FUNCS.map((func: Funcs) => (
                 <ListItem
-                  key={category.id}
-                  href={`/categories/${category.slug}`}
+                  key={func.id}
+                  href={`/${func.slug}`}
                 >
-                  {category.name}
+                  {func.name}
 
                 </ListItem>
               ))}
@@ -74,12 +74,12 @@ export function HeaderNavigation() {
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {SERVICES.map((category: Category) => (
+              {SERVICES.map((func: Funcs) => (
                 <ListItem
-                  key={category.id}
-                  href={`/categories/${category.slug}`}
+                  key={func.id}
+                  href={`/categories/${func.slug}`}
                 >
-                  {category.name}
+                  {func.name}
 
                 </ListItem>
               ))}

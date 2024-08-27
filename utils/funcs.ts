@@ -1,6 +1,6 @@
-import { Category } from "@/types";
+import { Funcs } from "@/types";
 
-export const CATEGORIES: Category[] = [
+export const FUNCS: Funcs[] = [
   { id: 1, name: "Recherche Services", slug: "recherche-service" },
   { id: 2, name: "Proposer Service", slug: "proposer-service" },
 ];

@@ -1,9 +1,9 @@
+import { Funcs } from "@/types";
+import { FUNCS } from "@/utils/funcs";
 import { Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { CATEGORIES } from "@/utils/categories";
-import { Category } from "@/types";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 export default function ResponsiveMenu() {
   return <Sheet>
@@ -16,12 +16,12 @@ export default function ResponsiveMenu() {
                         <Button variant="ghost">Write a post</Button>
                     </Link>
                     <p>Categories</p>
-                    {CATEGORIES.map((category: Category) => (
+                    {FUNCS.map((func: Funcs) => (
                         <Link 
-                        key={category.id}
-                        href={`/categories/${category.slug}`}
+                        key={func.id}
+                        href={`/categories/${func.slug}`}
                         className="block px-2 py-1 text-lg">
-                            <Button variant="ghost">{category.name}</Button>
+                            <Button variant="ghost">{func.name}</Button>
                         </Link>
                     ))}
                 </div>
